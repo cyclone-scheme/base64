@@ -5,31 +5,16 @@
           base64-encode-header)
   (import (scheme base)
           (cyclone string)
-          )
-  ;(cond-expand
-  ; ((library (srfi 151))
-  ;  (import (srfi 151)))
-  ; ((library (srfi 33))
-  ;  (import (srfi 33))
-  ;  (begin
-  ;    (define (%mask size) (bitwise-not (arithmetic-shift -1 size)))
-  ;    (define (bit-field n start end)
-  ;      (bitwise-and (arithmetic-shift n (- start)) (mask (- end start))))))
-  ; (else
-    (import (srfi 60))
-    ;(begin
-    ;  (define (%mask size) (bitwise-not (arithmetic-shift -1 size)))
-    ;  (define (bit-field n start end)
-    ;    (bitwise-and (arithmetic-shift n (- start)) (mask (- end start)))))
-    (begin
-      (define (port->string in)
-        (let ((out (open-output-string)))
-          (let lp ()
-            (let ((ch (read-char in)))
-              (cond
-               ((eof-object? ch)
-                (get-output-string out))
-               (else
-                (write-char ch out)
-                (lp))))))))
+          (srfi 60)
+  (begin
+    (define (port->string in)
+      (let ((out (open-output-string)))
+        (let lp ()
+          (let ((ch (read-char in)))
+            (cond
+             ((eof-object? ch)
+              (get-output-string out))
+             (else
+              (write-char ch out)
+              (lp))))))))
   (include "base64.scm"))
