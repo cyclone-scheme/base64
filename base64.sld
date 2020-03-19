@@ -5,7 +5,7 @@
           base64-encode-header)
   (import (scheme base)
           (cyclone string)
-          (srfi 60)
+          (srfi 60))
   (begin
     (define (port->string in)
       (let ((out (open-output-string)))
