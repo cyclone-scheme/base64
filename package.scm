@@ -8,6 +8,7 @@
  (tags           "networking")
  (docs           "https://github.com/cyclone-scheme/base64")
  (test           "base64-test.scm")
+ (dependencies (string))
 
  (library
      (name (cyclone base64))
