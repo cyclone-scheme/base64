@@ -1,5 +1,5 @@
 
-(define-library (base64)
+(define-library (cyclone base64)
   (export base64-encode base64-encode-string base64-encode-bytevector
           base64-decode base64-decode-string base64-decode-bytevector
           base64-encode-header)

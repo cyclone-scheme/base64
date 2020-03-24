@@ -7,7 +7,7 @@
  (description    "base64 encoding/decoding library")
  (tags           "networking")
  (docs           "https://github.com/cyclone-scheme/base64")
- (test           "test.scm")
+ (test           "base64-test.scm")
 
  (library
      (name (cyclone base64))

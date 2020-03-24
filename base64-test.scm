@@ -1,5 +1,5 @@
 (import (scheme base) 
-        (base64) 
+        (cyclone base64) 
         (cyclone string) 
         (cyclone test))
 (test-group "base64"
