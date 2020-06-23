@@ -1,11 +1,11 @@
 (package
   (name base64)
-  (version 0.2)
+  (version 0.3)
   (license "BSD")
-  (authors "")
-  (maintainers "")
-  (description "")
-  (tags "")
+  (authors "Alex Shinn")
+  (maintainers "Justin Ethier")
+  (description "Implementation of Base64 encoding / decoding")
+  (tags "networking")
   (docs "https://github.com/cyclone-scheme/cyclone-winds/wiki/base64")
   (test "test.scm")
   (dependencies ())
@@ -13,4 +13,4 @@
   (foreign-dependencies ())
   (library
     (name (cyclone base64))
-    (description "")))
+    (description "A library to encode and decode Base64")))

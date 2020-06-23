@@ -98,7 +98,7 @@ Alex Shinn
 Justin Ethier
 
 ## Version 
-0.2
+0.3
 
 ## License 
 BSD
