@@ -1,6 +1,6 @@
 (package
   (name base64)
-  (version 0.3)
+  (version "0.4.0")
   (license "BSD")
   (authors "Alex Shinn")
   (maintainers "Justin Ethier")
